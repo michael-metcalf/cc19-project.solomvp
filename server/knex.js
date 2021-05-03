@@ -1,12 +1,10 @@
-const { PG_USER, PG_PW, PG_NAME } = process.env;
-
 const knex = require("knex") ({
   client: "pg",
   connection: {
-    host: PG_HOST,
-    user: PG_USER,
-    password: PG_PW,
-    database: PG_NAME,
-    port: PG_PORT || 5432
+    host: process.env.HOST,
+    user: process.env.DB_USER,
+    password: process.env.DB_PW,
+    database: process.env.DB_NAME,
+    port: process.env.DB_PORT || 5432
   }
 });
