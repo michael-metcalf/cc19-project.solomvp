@@ -77,7 +77,7 @@ const Login = (props) => {
         <Form onSubmit={handleLogin} ref={form}>
           <div className="form-group">
             <label htmlFor="username">Username</label>
-            <input 
+            <Input 
               type="text"
               className="form-control"
               name="username"
