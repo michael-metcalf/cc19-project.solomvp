@@ -4,7 +4,7 @@ const mode = "development";
 
 module.exports = {
   mode,
-  entry: "./src/app.js",
+  entry: "./src/index.js",
   output: {
     filename: "bundle.js",
     path: path.join(__dirname, "public")
@@ -13,7 +13,7 @@ module.exports = {
   module: {
     rules: [{
       loader: "babel-loader",
-      test: /\.js$/,
+      test: /\.js$|jsx/,
       exclude: /node_modules/
     }]
   },
