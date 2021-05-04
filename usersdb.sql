@@ -1,0 +1,1 @@
+INSERT INTO users (username, email, password, createdat, updatedat) VALUES ('hammu', 'hammu@hammu.com', 'hammuhammu', '2021-05-04 21:02:26.070704+09', '2021-05-04 21:02:26.070704+09');

@@ -47,7 +47,7 @@ const vpassword = (value) => {
 };
 
 const Register = (prop) => {
-  const from = useRef();
+  const form = useRef();
   const checkBtn = useRef();
 
   const [username, setUsername] = useState("");
@@ -104,7 +104,7 @@ const Register = (prop) => {
     <div className="col-md-12">
       <div className="card card-container">
         <img 
-          src="//ssl.gstatic.com/accounts/ui/avatar_2x.png" 
+          src="https://images-na.ssl-images-amazon.com/images/I/81Q4ejK3xZL.png" 
           alt="profile_imag" 
           className="profile-img-card"
         />

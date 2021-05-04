@@ -9,10 +9,10 @@ app.use(express.json());
 const db = require("./src/models");
 const Role = db.role;
 
-// db.sequelize.sync({force: true}).then(() => {
-//   console.log("Drop and resync db");
-//   initial();
-// });
+db.sequelize.sync({force: true}).then(() => {
+  console.log("Drop and resync db");
+  initial();
+});
 
 var corsOptions = {
   origin: "http://localhost.8081"
@@ -42,19 +42,20 @@ app.listen(PORT, () => {
   console.log("Listening on port", PORT);
 });
 
-// function initial() {
-//   Role.create({
-//     id: 1,
-//     name: "user"
-//   });
+function initial() {
+  Role.create({
+    id: 1,
+    name: "user"
+  });
 
-//   Role.create({
-//     id: 2,
-//     name: "moderator"
-//   });
+  Role.create({
+    id: 2,
+    name: "moderator"
+  });
   
-//   Role.create({
-//     id: 3,
-//     name: "admin"
-//   });
-// }
+  Role.create({
+    id: 3,
+    name: "admin"
+  });
+}
+

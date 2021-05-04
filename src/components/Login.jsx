@@ -69,7 +69,7 @@ const Login = (props) => {
     <div className="col-md-12">
       <div className="card card-container">
         <img 
-          src="//ssl.gstatic.com/account/ui/avatar_2x.png" 
+          src="https://images-na.ssl-images-amazon.com/images/I/81Q4ejK3xZL.png" 
           alt="profile-img"
           className="profile-img-card"
         />
