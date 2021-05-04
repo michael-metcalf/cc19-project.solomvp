@@ -2,7 +2,7 @@
   "name": "cc19-project.solomvp",
   "version": "1.0.0",
   "description": "",
-  "browser": "./src/index.js",
+  "browser": "server.js",
   "main": "server.js",
   "scripts": {
     "lint": "eslint",

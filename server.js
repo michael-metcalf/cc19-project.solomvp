@@ -4,7 +4,7 @@ const cors = require("cors");
 
 const app = express();
 
-app.use(express.json());
+// app.use(express.json());
 
 const db = require("./src/models");
 const Role = db.role;
