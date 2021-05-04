@@ -9,10 +9,10 @@ app.use(express.json());
 const db = require("./src/models");
 const Role = db.role;
 
-db.sequelize.sync({force: true}).then(() => {
-  console.log("Drop and resync db");
-  initial();
-});
+// db.sequelize.sync({force: true}).then(() => {
+//   console.log("Drop and resync db");
+//   initial();
+// });
 
 var corsOptions = {
   origin: "http://localhost.8081"
@@ -32,22 +32,22 @@ app.get("/", (req, res) => {
   res.send("Welcome to GamaGacha!");
 });
 
-function initial() {
-  Role.create({
-    id: 1,
-    name: "user"
-  });
+// function initial() {
+//   Role.create({
+//     id: 1,
+//     name: "user"
+//   });
 
-  Role.create({
-    id: 2,
-    name: "moderator"
-  });
+//   Role.create({
+//     id: 2,
+//     name: "moderator"
+//   });
   
-  Role.create({
-    id: 3,
-    name: "admin"
-  });
-}
+//   Role.create({
+//     id: 3,
+//     name: "admin"
+//   });
+// }
 
 // set port and listen for requests
 const PORT = process.env.PORT || 8080;
