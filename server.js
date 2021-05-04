@@ -32,6 +32,16 @@ app.get("/", (req, res) => {
   res.send("Welcome to GamaGacha!");
 });
 
+// routes
+require("./src/routes/auth.routes")(app);
+require("./src/routes/user.routes")(app);
+
+// set port and listen for requests
+const PORT = process.env.PORT || 8080;
+app.listen(PORT, () => {
+  console.log("Listening on port", PORT);
+});
+
 // function initial() {
 //   Role.create({
 //     id: 1,
@@ -48,9 +58,3 @@ app.get("/", (req, res) => {
 //     name: "admin"
 //   });
 // }
-
-// set port and listen for requests
-const PORT = process.env.PORT || 8080;
-app.listen(PORT, () => {
-  console.log("Listening on port", PORT);
-});
