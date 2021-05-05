@@ -25,3 +25,11 @@ STATUS: Click either the 'Completed' button if you've completed the game, or cli
 When you're finished completing the input fields, click 'Add Game' to add the game to your collection. It will appear in your game collection on your profile page.
 
 Thank you for choosing GamaGacha to track your collection. Happy collecting and happy gaming!
+
+LOOK OUT FOR THESE FEATURES IN THE FUTURE:
+
+Price tracking and location tracking: for when you spot that game you've been wanting to add to your collection out in the wild and you want to remember where you found it and what its price was.
+
+Map integration: so you can find the locations of the stores that have games that you want to purchase in the future.
+
+And why stop at just game collecting? Maybe GamaGacha will expand into figure collecting, card collecting, or even dust bunny collecting...(WAT??)
